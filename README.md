@@ -2,20 +2,22 @@
 
 ## 1. Create the `.env` file
 
-Inside the `back` folder, create a file named `.env` and paste the following:
+Inside the `back` folder, create a file named `.env` and fill in your own values:
 
 ```env
-DB_HOST=mysql-unipulse-ztongdb-123.i.aivencloud.com
-DB_PORT=22842
-DB_USER=avnadmin
-DB_PASSWORD=REDACTED
-DB_NAME=unipulse_db
+DB_HOST=your-database-host
+DB_PORT=3306
+DB_USER=your-db-user
+DB_PASSWORD=your-db-password
+DB_NAME=unipulse
 PORT=4000
-JWT_SECRET=unipulse_jwt_secret_key_2024
-JWT_EXPIRES_IN=7d
+JWT_SECRET=generate-a-long-random-secret
+JWT_EXPIRES_IN=1d
 BCRYPT_ROUNDS=10
 NODE_ENV=development
 ```
+
+> **Never commit `.env` or real credentials to the repository.**
 
 ---
 
